@@ -1,0 +1,8 @@
+
+/// apply-to-ie6-only
+
+@mixin apply-to-ie6-only {
+  * html {
+    @content;
+  }
+}
