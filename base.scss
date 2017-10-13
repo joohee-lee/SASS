@@ -1,0 +1,80 @@
+//base.scss
+//import
+// 
+@import 'reset';
+
+//mixins
+@import 'mixins/border-radius';
+@import 'mixins/clearfix';
+@import 'mixins/rem';
+@import 'mixins/prefix';
+@import 'mixins/ie6only';
+
+body{
+	font-family: helvetica, sans-serif;
+	@include rem(font-size, 14px);
+	@include rem(margin, 10px);
+}
+
+
+// @include
+/* box */
+.box { 
+	width: 100%;
+	height: 50px;
+	@include border-radius(10px);
+	@include css3-prefix(box-sizing, border-box);
+	background-color: #eee;
+ }
+
+// @extend
+ /* message */
+ .message {
+  border: 1px solid; 
+  @include border-radius(4px);
+  @include rem(padding, 10px);
+  @include rem(margin-top, 10px);
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+.error {
+  @extend .message;
+  border-color: red; 
+}
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+// Operators 
+.container { 
+	width: 100%; 
+	@include clearfix;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+  background-color: #ddd;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+// @content
+@include apply-to-ie6-only {
+  #logo {
+    background-image: url(/logo.gif);
+  }
+}
+
+
+.box-1{
+    background-color: red;  
+}
