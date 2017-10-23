@@ -59,8 +59,8 @@
   ## Sass Flow 
   
   ## Sass Link 
-  - [The Sass Way]:http://www.thesassway.com/
-  - [Sitepoint Sass Reference]:https://www.sitepoint.com/sass-reference/
-  - [Sitepoint Sass Articles]:https://www.sitepoint.com/html-css/css/sass-css/
+  [The Sass Way]:http://www.thesassway.com/
+  [Sitepoint Sass Reference]:https://www.sitepoint.com/sass-reference/
+  [Sitepoint Sass Articles]:https://www.sitepoint.com/html-css/css/sass-css/
   
   
