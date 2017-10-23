@@ -31,3 +31,26 @@
         */
 
       ~~~
+  3. comment code
+  * sass
+  ~~~
+  /* You can See me */
+
+  // You can't see me
+
+  /* You
+     Can
+     See
+     Mee
+  */
+  ~~~
+  
+  * css
+  ~~~
+  /* You can See me */
+  /* You
+     Can
+     See
+     Mee
+  */
+  ~~~
